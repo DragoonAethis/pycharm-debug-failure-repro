@@ -1,0 +1,6 @@
+- Run `prepare-venv.sh` first.
+- Run `run-valkey.sh` to run a message broker for Celery, nothing works otherwise.
+- Open the directory as a project in PyCharm, then in Run Configurations:
+  - You can debug `celery-solo` just fine...
+  - But `celery-prefork-failure` immediately crashes.
+- You can run `enqueue-task.py` to run a Celery task.
